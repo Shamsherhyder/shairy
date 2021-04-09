@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .conatiner {
+            max-width: 700px;
+            width: 100%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+        }
+
+        .conatiner .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .conatiner .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            ;
+        }
+
+        .conatiner form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        form .user-details .input-box{
+            width: calc(100% / 2 - 20px);
+        }
+    .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+        }
+        form .button input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            letter-spacing: 1px;
+            border-radius: 5px;
+        
+        }
+        form .button input:hover{
+            background:linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+            </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="title">Registeration</div>
+        <form action="#" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="detail">Fullname</span>
+                    <input type="text" placeholder="Enter full name" name="fullname">
+                </div>
+                <div class="input-box">
+                    <span class="detail">username</span>
+                    <input type="text" placeholder="Enter username name" name="username">
+                </div>
+                <div class="input-box">
+                    <span class="detail">email</span>
+                    <input type="text" placeholder="Enter email" name="email">
+                </div>
+                <div class="input-box">
+                    <span class="detail">number</span>
+                    <input type="text" placeholder="Enter number" name="number">
+                </div>
+                <div class="input-box">
+                    <span class="detail">password</span>
+                    <input type="text" placeholder="Enter password" name="password">
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
